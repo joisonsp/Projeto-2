@@ -1,12 +1,16 @@
 #include <iostream>
 #include <vector>
-#include "MenuPrincipal.h"
-#include "MenuCadastrar.h"
-#include "MenuConsultar.h"
-#include "MenuEncerrar.h"
-
-#include <stdlib.h>
 #include <locale>
+#include <string>
+#include <stdlib.h>
+
+#include "Menu.h"
+#include "Imovel.h"
+#include "Terreno.h"
+#include "Apartamento.h"
+#include "Casa.h"
+#include "SistemaImobiliaria.h"
+#include "Endereco.h"
 
 using namespace std;
 
@@ -21,45 +25,48 @@ using namespace std;
 int main()
 {
 
-    int opcao, opE, opC;
-
     Casa cs;
-    MenuPrincipal menuP;
-    MenuCadastrar menuCa;
-    MenuConsultar menuCo;
-    MenuEncerrar menuEn;
+    Menu menu1;
 
-    menuP.ExibirMenu();
-    cin >> opcao;
+    //menu1.MenuPrincipal();
 
-    switch(opcao){
+
+    switch(menu1.MenuPrincipal()){
         case 0 :
-            menuEn.ExibirMenu();
-            cin >> opE;
-            switch(opE){
-                case 1:
-                    exit(0);
-                case 2:
-                    exit(0);
-                case 3:
-                    break;
-            }
+            menu1.MenuEncerrar();
+            if(menu1.MenuEncerrar() == 1){/*salvar no arquivo*/}
+            else if(menu1.MenuEncerrar() == 2) exit(0);
+            else if(menu1.MenuEncerrar() == 3){menu1.MenuPrincipal();}
+            break;
         case 1 :
-            menuCa.ExibirMenu();
-            cin >> opC;
-            switch(opC){
-                case 1 :
-                    cout << "Digite:" << endl << "longradouro: " << endl()
-
-            }
-
+            menu1.MenuCadastrar();
+            if(menu1.MenuCadastrar() == 1){/*Cadastrar uma casa*/}
+            else if(menu1.MenuCadastrar() == 2) {/*cadastrar um apto*/}
+            else if(menu1.MenuCadastrar() == 3){/*cadastrar um terreno*/}
+            break;
+        case 2 :
+            menu1.MenuConsultar();
+            if(menu1.MenuConsultar() == 1){/*listar todos os imoveis */}
+            else if(menu1.MenuConsultar() == 2){/*listar todos os imoveis com descricao*/}
+            else if(menu1.MenuConsultar() == 3){/*listar todos os imoveis para venda por tipo */}
+            else if(menu1.MenuConsultar() == 4){/*listar todos os imoveis para aluguel por tipo*/}
+            else if(menu1.MenuConsultar() == 5){/*listar todos os imoveis para venda por bairro*/}
+            else if(menu1.MenuConsultar() == 6){/*listar todos os imoveis para aluguel por bairro*/}
+            else if(menu1.MenuConsultar() == 7){/*listar todos os imoveis por cidade*/}
+            break;
     }
 
-    menuP.ExibirMenu();
-    cin >> opcao;
 
-    vector<Imovel> lista;
+    //vector<Imovel> lista;
 
     cout << "Hello world!" << endl;
     return 0;
 }
+
+
+
+/*cadastrarCasa( casa ){
+
+    listacasas.pushback(casa);
+
+}*/

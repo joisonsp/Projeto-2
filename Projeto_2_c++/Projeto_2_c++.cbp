@@ -40,10 +40,6 @@
 		<Unit filename="include/Endereco.h" />
 		<Unit filename="include/Imovel.h" />
 		<Unit filename="include/Menu.h" />
-		<Unit filename="include/MenuCadastrar.h" />
-		<Unit filename="include/MenuConsultar.h" />
-		<Unit filename="include/MenuEncerrar.h" />
-		<Unit filename="include/MenuPrincipal.h" />
 		<Unit filename="include/SistemaImobiliaria.h" />
 		<Unit filename="include/Terreno.h" />
 		<Unit filename="main.cpp" />
@@ -52,10 +48,7 @@
 		<Unit filename="src/Clear.cpp" />
 		<Unit filename="src/Endereco.cpp" />
 		<Unit filename="src/Imovel.cpp" />
-		<Unit filename="src/MenuCadastrar.cpp" />
-		<Unit filename="src/MenuConsultar.cpp" />
-		<Unit filename="src/MenuEncerrar.cpp" />
-		<Unit filename="src/MenuPrincipal.cpp" />
+		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/SistemaImobiliaria.cpp" />
 		<Unit filename="src/Terreno.cpp" />
 		<Extensions>

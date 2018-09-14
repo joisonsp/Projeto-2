@@ -6,8 +6,10 @@ class Menu
 {
     public:
         Menu();
-        virtual ~Menu();
-
+        int MenuPrincipal();
+        int MenuCadastrar();
+        int MenuConsultar();
+        int MenuEncerrar();
     protected:
 
     private:
