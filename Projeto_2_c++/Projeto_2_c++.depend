@@ -89,3 +89,69 @@
 	"Menu.h"
 	"Clear.h"
 
+1537545999 source:c:\users\aluno\desktop\projeto_2_c++\main.cpp
+	<iostream>
+	<vector>
+	<locale>
+	<string>
+	<stdlib.h>
+	"Menu.h"
+	"Imovel.h"
+	"Terreno.h"
+	"Apartamento.h"
+	"Casa.h"
+	"SistemaImobiliaria.h"
+	"Endereco.h"
+	<fstream>
+
+1536947366 c:\users\aluno\desktop\projeto_2_c++\include\menu.h
+
+1536947366 c:\users\aluno\desktop\projeto_2_c++\include\imovel.h
+	"Endereco.h"
+
+1536947366 c:\users\aluno\desktop\projeto_2_c++\include\endereco.h
+	<string>
+
+1536947366 c:\users\aluno\desktop\projeto_2_c++\include\terreno.h
+	"Imovel.h"
+
+1536947366 c:\users\aluno\desktop\projeto_2_c++\include\apartamento.h
+	<string>
+	"Imovel.h"
+
+1536947366 c:\users\aluno\desktop\projeto_2_c++\include\casa.h
+	"Imovel.h"
+
+1536947366 c:\users\aluno\desktop\projeto_2_c++\include\sistemaimobiliaria.h
+
+1536947366 source:c:\users\aluno\desktop\projeto_2_c++\src\apartamento.cpp
+	"Apartamento.h"
+
+1536947366 source:c:\users\aluno\desktop\projeto_2_c++\src\casa.cpp
+	"Casa.h"
+
+1536947366 source:c:\users\aluno\desktop\projeto_2_c++\src\clear.cpp
+	"Clear.h"
+	<unistd.h>
+	<stdlib.h>
+	<windows.h>
+
+1536947366 c:\users\aluno\desktop\projeto_2_c++\include\clear.h
+
+1536947366 source:c:\users\aluno\desktop\projeto_2_c++\src\endereco.cpp
+	"Endereco.h"
+
+1536947366 source:c:\users\aluno\desktop\projeto_2_c++\src\imovel.cpp
+	"Imovel.h"
+
+1537547171 source:c:\users\aluno\desktop\projeto_2_c++\src\menu.cpp
+	<iostream>
+	"Menu.h"
+	"Clear.h"
+
+1536947366 source:c:\users\aluno\desktop\projeto_2_c++\src\sistemaimobiliaria.cpp
+	"SistemaImobiliaria.h"
+
+1536947366 source:c:\users\aluno\desktop\projeto_2_c++\src\terreno.cpp
+	"Terreno.h"
+
