@@ -1,4 +1,6 @@
 #include <iostream>
+#include <vector>
+#include <locale>
 #include <string>
 #include <stdlib.h>
 
@@ -17,27 +19,22 @@ using namespace std;
 
 
 
-void StringMaiusculoEAcento(string n){
+/*void StringMaiusculoEAcento(char frase[], size_t tamanho){
 	int i;
-
-	for(i = 0; i < n.length(); i++){
-		n[i] = toupper(n[i]);
+    setlocale(LC_ALL, "");
+	for(i = 0; i < tamanho-1; i++){
+		frase[i] = toupper(frase[i]);
 	}
-}//Para todas as letras serem consideradas maiusculas
+}Para todas as letras serem consideradas maiusculas*/
 
 int main()
 {
-    //fstream arquivo;
-    //arquivo.open("teste.txt",  ios::out|ios::app);
 
-
-
-    list<Casa> casas;
+    Casa cs;
     Menu menu1;
 
     //menu1.MenuPrincipal();
 
-    setlocale(LC_ALL, "Portuguese");
 
     switch(menu1.MenuPrincipal()){
         case 0 :
@@ -67,7 +64,7 @@ int main()
 
     //vector<Imovel> lista;
 
-    //cout << "Hello world!" << endl;
+    cout << "Hello world!" << endl;
     return 0;
 }
 

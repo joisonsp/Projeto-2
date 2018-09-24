@@ -11,6 +11,25 @@ Endereco::Endereco()
     numero = 0;
 }
 
+Endereco::Endereco(string logradouro, string bairro, string cidade, string cep, int numero){
+
+    setLongradouro(logradouro);
+    setBairro(bairro);
+    setCidade(cidade);
+    setCep(cep);
+    setNumero(numero);
+
+}
+
+string Endereco::toString(){
+
+    stringstream n;
+    n << numero;
+
+    return longradouro+"\n"+cep+"\n"+cidade+"\n"+bairro+"\n"+n.str();
+
+}
+
 string Endereco::getLongradouro(){
     return longradouro;
 }

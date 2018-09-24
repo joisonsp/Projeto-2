@@ -8,15 +8,6 @@ Casa::Casa()
     areaConstruida = 0.0;
 }
 
-Casa::Casa(int numPavimentos, double areaConstruida, int numQuartos, double areaTerreno){
-
-    setNumPavimentos(numPavimentos);
-    setNemPavimentos(numQuartos);
-    setAreaTerreno(areaTerreno);
-    setAreaConstruida(areaConstruida);
-
-}
-
 int Casa::getNumPavimentos(){
     return numPavimentos;
 }
@@ -41,8 +32,4 @@ void Casa::setAreaTerreno(double aTerreno){
 }
 void Casa::setAreaConstruida(double aConstruida){
     areaConstruida = aConstruida;
-}
-
-void Casa::setEndereco(Endereco ende){
-
 }

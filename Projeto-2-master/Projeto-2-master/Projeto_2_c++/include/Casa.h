@@ -8,6 +8,8 @@ class Casa : public Imovel
     public:
 
         Casa();
+        Casa(int numPavimentos, double areaConstruida, int numQuartos, double areaTerreno, int tipoOferta, double valor);
+
         int getNumPavimentos();
         int getNumQuartos();
         double getAreaTerreno();
@@ -17,6 +19,8 @@ class Casa : public Imovel
         void setNemPavimentos(int nQuartos);
         void setAreaTerreno(double aTerreno);
         void setAreaConstruida(double aConstruida);
+        void setEndereco(Endereco ende);
+        std::string toString();
 
     protected:
 
