@@ -1,6 +1,9 @@
 #include "Casa.h"
 #include <sstream>
- using namespace std;
+
+
+using namespace std;
+
 Casa::Casa()
 {
     numPavimentos = 0;
@@ -62,5 +65,6 @@ std::string Casa::toString(){
 
 
     linha = endereco.toString()+"\n"+nP.str()+"\n"+ nQ.str()+"\n"+aT.str()+"\n"+aC.str();
+
     return linha;
 }
